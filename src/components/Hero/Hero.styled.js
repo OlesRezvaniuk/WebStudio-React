@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import mobileBg from '../../img/heroM.jpg';
 import tabletBg from '../../img/heroT.jpg';
 import desktopBg from '../../img/heroD.jpg';
-import closeIcon from '../../img/close-black.svg';
+import { ReactComponent as ModalIconClose } from '../../img/close-black.svg';
 
 export const HeroSection = styled.section`
   display: flex;
@@ -10,6 +10,7 @@ export const HeroSection = styled.section`
   align-items: center;
   justify-content: center;
   padding: 118px 0px;
+  position: relative;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -78,9 +79,17 @@ export const ModalBtn = styled.button`
   color: #ffffff;
 `;
 
-export const CLoseIcon = styled(closeIcon)`
+export const CLoseIcon = styled(ModalIconClose)`
   * {
     color: black;
     fill: black;
   }
+`;
+
+export const ModalBox = styled.div`
+  position: fixed;
+  background-color: white;
+  display: flex;
+  width: calc(100% - 30px);
+  padding: 0px 15px;
 `;

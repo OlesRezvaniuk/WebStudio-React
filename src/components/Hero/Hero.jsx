@@ -4,14 +4,15 @@ import {
   HeroSection,
   HeroContainer,
   CLoseIcon,
+  ModalBox,
 } from './Hero.styled';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
-    setIsModalOpen(true);
+    setIsModalOpen(!isModalOpen);
   };
 
   console.log(isModalOpen);
@@ -23,12 +24,12 @@ export const Hero = () => {
           Эффективные решения <br /> для вашего бизнеса
         </HeroTitle>
         <ModalBtn onClick={handleModalOpen}>Заказать услугу</ModalBtn>
-        {isModalOpen && (
-          <div>
-            <CLoseIcon></CLoseIcon>
-          </div>
-        )}
       </HeroContainer>
+      {isModalOpen && (
+        <ModalBox>
+          Modal <CLoseIcon onClick={handleModalOpen}></CLoseIcon>
+        </ModalBox>
+      )}
     </HeroSection>
   );
 };
