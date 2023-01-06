@@ -15,6 +15,26 @@ export const Hero = () => {
     setIsModalOpen(!isModalOpen);
   };
 
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyModalClose);
+    return () => {
+      window.removeEventListener('keydown', handleKeyModalClose);
+    };
+  }, []);
+
+  const handleKeyModalClose = e => {
+    if (e.code === 'Escape') {
+      setIsModalOpen(false);
+    }
+  };
+
+  const handleBackdropClose = e => {
+    if (e.target === e.currentTarget) {
+      console.log('hi');
+      setIsModalOpen(false);
+    }
+  };
+
   console.log(isModalOpen);
 
   return (
@@ -26,9 +46,11 @@ export const Hero = () => {
         <ModalBtn onClick={handleModalOpen}>Заказать услугу</ModalBtn>
       </HeroContainer>
       {isModalOpen && (
-        <ModalBox>
-          Modal <CLoseIcon onClick={handleModalOpen}></CLoseIcon>
-        </ModalBox>
+        <div>
+          <ModalBox onClick={handleBackdropClose}>
+            Modal <CLoseIcon onClick={handleModalOpen}></CLoseIcon>
+          </ModalBox>
+        </div>
       )}
     </HeroSection>
   );
