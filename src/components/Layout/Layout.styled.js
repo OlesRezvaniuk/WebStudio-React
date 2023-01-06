@@ -1,9 +1,15 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ReactComponent as MenuIconOpen } from '../../img/menu_40px.svg';
 import { ReactComponent as MenuIconClose } from '../../img/close_40px.svg';
+import { ReactComponent as EmailIcon } from '../../img/envelope.svg';
+import { ReactComponent as PhoneNumberIcon } from '../../img/smartphone.svg';
 
 export const Header = styled.header`
+  box-shadow: 0px 0px 4px grey;
+`;
+
+export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   margin: auto;
@@ -28,6 +34,33 @@ export const NavList = styled.ul`
   gap: 50px;
 `;
 
+export const NavLinkStyled = styled(NavLink)`
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  position: relative;
+  transition: 250ms;
+  &.active {
+    color: #2196f3;
+    &:before {
+      bottom: -31px;
+      border-radius: 1px;
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: #2196f3;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+`;
+
 export const NavListMenu = styled.ul`
   @media screen and (max-width: 767px) {
     display: block;
@@ -46,10 +79,13 @@ export const AddressList = styled.ul`
   list-style: none;
   display: none;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 `;
 
@@ -63,6 +99,8 @@ export const AddressListMenu = styled.ul`
 `;
 
 export const LogoLink = styled(Link)`
+  font-family: 'Raleway';
+  font-style: normal;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -119,5 +157,49 @@ export const MenuIconCloseStyled = styled(MenuIconClose)`
       color: #2196f3;
       fill: #2196f3;
     }
+  }
+`;
+
+export const EmailIconStyled = styled(EmailIcon)`
+  margin-right: 10px;
+  color: inherit;
+  fill: inherit;
+  transition: 250ms;
+  * {
+    color: inherit;
+    fill: inherit;
+  }
+`;
+
+export const PhoneNumberIconStyled = styled(PhoneNumberIcon)`
+  margin-right: 10px;
+  color: inherit;
+  fill: inherit;
+  transition: 250ms;
+  * {
+    color: inherit;
+    fill: inherit;
+  }
+`;
+
+export const EmailAddress = styled.a`
+  color: #757575;
+  fill: #757575;
+  transition: 250ms;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+`;
+
+export const PhoneNumber = styled.a`
+  color: #757575;
+  fill: #757575;
+  transition: 250ms;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    fill: #2196f3;
   }
 `;
