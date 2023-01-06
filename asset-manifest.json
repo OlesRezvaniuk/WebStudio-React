@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/WebStudio-React/static/css/main.75322f90.css",
-    "main.js": "/WebStudio-React/static/js/main.73a86a09.js",
+    "main.css": "/WebStudio-React/static/css/main.71666b19.css",
+    "main.js": "/WebStudio-React/static/js/main.f97af120.js",
+    "static/media/heroD.jpg": "/WebStudio-React/static/media/heroD.1845d10988e6759310fc.jpg",
+    "static/media/heroT.jpg": "/WebStudio-React/static/media/heroT.d4482bcebd99362bf92d.jpg",
+    "static/media/heroM.jpg": "/WebStudio-React/static/media/heroM.54e7955a75e0f3e53100.jpg",
     "index.html": "/WebStudio-React/index.html",
+    "static/media/smartphone.svg": "/WebStudio-React/static/media/smartphone.a1308c0c15eef66535c8e5caf2bfc933.svg",
+    "static/media/envelope.svg": "/WebStudio-React/static/media/envelope.c6b55f9f999112cf49396ab42b0a9092.svg",
     "static/media/close_40px.svg": "/WebStudio-React/static/media/close_40px.539ee86139544413e8d81c8deac43f18.svg",
+    "static/media/close-black.svg": "/WebStudio-React/static/media/close-black.25f5bd0cdfd4b0e1b70f1b27f997afda.svg",
     "static/media/menu_40px.svg": "/WebStudio-React/static/media/menu_40px.b89a632bd03690e02e40a22fe71cd61e.svg",
-    "main.75322f90.css.map": "/WebStudio-React/static/css/main.75322f90.css.map",
-    "main.73a86a09.js.map": "/WebStudio-React/static/js/main.73a86a09.js.map"
+    "main.71666b19.css.map": "/WebStudio-React/static/css/main.71666b19.css.map",
+    "main.f97af120.js.map": "/WebStudio-React/static/js/main.f97af120.js.map"
   },
   "entrypoints": [
-    "static/css/main.75322f90.css",
-    "static/js/main.73a86a09.js"
+    "static/css/main.71666b19.css",
+    "static/js/main.f97af120.js"
   ]
 }
