@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import mobileBg from '../../img/heroM.jpg';
 import tabletBg from '../../img/heroT.jpg';
 import desktopBg from '../../img/heroD.jpg';
-import { ReactComponent as ModalIconClose } from '../../img/close-black.svg';
 
 export const HeroSection = styled.section`
   display: flex;
@@ -77,19 +76,4 @@ export const ModalBtn = styled.button`
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-`;
-
-export const CLoseIcon = styled(ModalIconClose)`
-  * {
-    color: black;
-    fill: black;
-  }
-`;
-
-export const ModalBox = styled.div`
-  position: fixed;
-  background-color: white;
-  display: flex;
-  width: calc(100% - 30px);
-  padding: 0px 15px;
 `;

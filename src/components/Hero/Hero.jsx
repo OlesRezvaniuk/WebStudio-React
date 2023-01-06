@@ -1,12 +1,6 @@
-import {
-  HeroTitle,
-  ModalBtn,
-  HeroSection,
-  HeroContainer,
-  CLoseIcon,
-  ModalBox,
-} from './Hero.styled';
-import { useState, useEffect } from 'react';
+import { HeroTitle, ModalBtn, HeroSection, HeroContainer } from './Hero.styled';
+import { useState } from 'react';
+import { HeroModal } from 'components/HeroModal/HeroModal';
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,28 +8,6 @@ export const Hero = () => {
   const handleModalOpen = () => {
     setIsModalOpen(!isModalOpen);
   };
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyModalClose);
-    return () => {
-      window.removeEventListener('keydown', handleKeyModalClose);
-    };
-  }, []);
-
-  const handleKeyModalClose = e => {
-    if (e.code === 'Escape') {
-      setIsModalOpen(false);
-    }
-  };
-
-  const handleBackdropClose = e => {
-    if (e.target === e.currentTarget) {
-      console.log('hi');
-      setIsModalOpen(false);
-    }
-  };
-
-  console.log(isModalOpen);
 
   return (
     <HeroSection>
@@ -45,12 +17,12 @@ export const Hero = () => {
         </HeroTitle>
         <ModalBtn onClick={handleModalOpen}>Заказать услугу</ModalBtn>
       </HeroContainer>
+
       {isModalOpen && (
-        <div>
-          <ModalBox onClick={handleBackdropClose}>
-            Modal <CLoseIcon onClick={handleModalOpen}></CLoseIcon>
-          </ModalBox>
-        </div>
+        <HeroModal
+          setIsModalOpen={setIsModalOpen}
+          handleModalOpen={handleModalOpen}
+        />
       )}
     </HeroSection>
   );

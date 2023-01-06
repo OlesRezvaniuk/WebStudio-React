@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Attention to detail",
+    "text": "Ideological considerations, as well as the beginning of daily work on the formation of a position.",
+    "img": "../src/img/antenna 1.svg"
+  },
+  {
+    "id": "2",
+    "title": "Punctuality",
+    "text": "The task of the organization, in particular the framework and place of training of personnel entails.",
+    "img": "../img/antenna 1.svg"
+  },
+  {
+    "id": "3",
+    "title": "Planning",
+    "text": "Similarly, consultation with a broad asset is largely conditional.",
+    "img": "../../img/antenna 1.svg"
+  },
+  {
+    "id": "4",
+    "title": "Modern technologies",
+    "text": "The significance of these problems is so obvious that the implementation of planned targets.",
+    "img": "../img/antenna 1.svg"
+  }
+]
