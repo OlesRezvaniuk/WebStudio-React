@@ -21,6 +21,7 @@ const SocialItem = styled.li`
   &:hover,
   &:focus {
     background-color: #2196f3;
+    box-shadow: 0px 0px 4px #2196f3;
   }
 `;
 

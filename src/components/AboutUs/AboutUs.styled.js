@@ -45,7 +45,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   display: flex;
   @media screen and (max-width: 479px) {
-    width: calc(100% - 30px);
+    width: calc(100%);
   }
   flex-direction: column;
   justify-content: center;
