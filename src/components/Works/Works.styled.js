@@ -28,7 +28,7 @@ const WorksTitle = styled.p`
   padding: 27px 0px;
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   width: 100%;
 
   font-weight: 700;
