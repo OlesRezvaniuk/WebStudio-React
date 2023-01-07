@@ -1,22 +1,42 @@
 {
   "files": {
-    "main.css": "/WebStudio-React/static/css/main.71666b19.css",
-    "main.js": "/WebStudio-React/static/js/main.e4dcce6b.js",
+    "main.css": "/WebStudio-React/static/css/main.a43bf354.css",
+    "main.js": "/WebStudio-React/static/js/main.0dfa6a34.js",
     "static/media/heroD.jpg": "/WebStudio-React/static/media/heroD.1845d10988e6759310fc.jpg",
     "static/media/heroT.jpg": "/WebStudio-React/static/media/heroT.d4482bcebd99362bf92d.jpg",
     "static/media/heroM.jpg": "/WebStudio-React/static/media/heroM.54e7955a75e0f3e53100.jpg",
+    "static/media/work1.jpg": "/WebStudio-React/static/media/work1.b1545ca6866a29803be7.jpg",
+    "static/media/work2.jpg": "/WebStudio-React/static/media/work2.c976697651f191f99174.jpg",
+    "static/media/AboutUs2.jpg": "/WebStudio-React/static/media/AboutUs2.e9c51066bc2fa9a7c7a3.jpg",
+    "static/media/AboutUs4.jpg": "/WebStudio-React/static/media/AboutUs4.07fdea8cf2d2f6953412.jpg",
+    "static/media/work3.jpg": "/WebStudio-React/static/media/work3.3b0c842bd6402bc070ee.jpg",
+    "static/media/AboutUs1.jpg": "/WebStudio-React/static/media/AboutUs1.7dfc230ecfe2ff7a465d.jpg",
+    "static/media/AboutUs3.jpg": "/WebStudio-React/static/media/AboutUs3.2a6acfb7cbf052c1b286.jpg",
+    "static/media/astronaut 1.svg": "/WebStudio-React/static/media/astronaut 1.d1af611b014ed0e3a25b114671f6213b.svg",
+    "static/media/Client (1).svg": "/WebStudio-React/static/media/Client (1).4ea7345f630ec8aa336074c6cdb16588.svg",
+    "static/media/Client (2).svg": "/WebStudio-React/static/media/Client (2).284b3f2af47a15ba3035c486f1adc36d.svg",
+    "static/media/Client (3).svg": "/WebStudio-React/static/media/Client (3).311e29dfbf40ce3314ab09a1a44050f0.svg",
+    "static/media/Client (4).svg": "/WebStudio-React/static/media/Client (4).6ed3da7a2c0ac8e61ffd04cdf50045cc.svg",
+    "static/media/Client (5).svg": "/WebStudio-React/static/media/Client (5).3c5865c793a467b6e34bb25ed1f2980e.svg",
+    "static/media/Client (6).svg": "/WebStudio-React/static/media/Client (6).7224c3b64671da1811b72a0e80b03628.svg",
+    "static/media/instagram.svg": "/WebStudio-React/static/media/instagram.20ee93c6d5b4bb44684162452d263fc0.svg",
+    "static/media/diagram 1.svg": "/WebStudio-React/static/media/diagram 1.3532d7517fd49c80175f4014e14c63e5.svg",
     "static/media/antenna 1.svg": "/WebStudio-React/static/media/antenna 1.0be0a8c923d05c5f6eed371d237fc038.svg",
+    "static/media/clock 1.svg": "/WebStudio-React/static/media/clock 1.fa8b782dc27d5111b52ff0fce4379b56.svg",
     "index.html": "/WebStudio-React/index.html",
+    "static/media/twitter.svg": "/WebStudio-React/static/media/twitter.a2009a9dff200d451172e32806b8f93d.svg",
+    "static/media/linkedin.svg": "/WebStudio-React/static/media/linkedin.7378490bb4375ade3255e24bc68e73b1.svg",
     "static/media/smartphone.svg": "/WebStudio-React/static/media/smartphone.a1308c0c15eef66535c8e5caf2bfc933.svg",
     "static/media/envelope.svg": "/WebStudio-React/static/media/envelope.c6b55f9f999112cf49396ab42b0a9092.svg",
+    "static/media/facebook.svg": "/WebStudio-React/static/media/facebook.9f149c4f71dec06302e3babba79029e1.svg",
     "static/media/close_40px.svg": "/WebStudio-React/static/media/close_40px.539ee86139544413e8d81c8deac43f18.svg",
     "static/media/close-black.svg": "/WebStudio-React/static/media/close-black.25f5bd0cdfd4b0e1b70f1b27f997afda.svg",
     "static/media/menu_40px.svg": "/WebStudio-React/static/media/menu_40px.b89a632bd03690e02e40a22fe71cd61e.svg",
-    "main.71666b19.css.map": "/WebStudio-React/static/css/main.71666b19.css.map",
-    "main.e4dcce6b.js.map": "/WebStudio-React/static/js/main.e4dcce6b.js.map"
+    "main.a43bf354.css.map": "/WebStudio-React/static/css/main.a43bf354.css.map",
+    "main.0dfa6a34.js.map": "/WebStudio-React/static/js/main.0dfa6a34.js.map"
   },
   "entrypoints": [
-    "static/css/main.71666b19.css",
-    "static/js/main.e4dcce6b.js"
+    "static/css/main.a43bf354.css",
+    "static/js/main.0dfa6a34.js"
   ]
 }
