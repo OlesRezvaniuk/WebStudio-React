@@ -63,6 +63,7 @@ export const HeroTitle = styled.h1`
 `;
 
 export const ModalBtn = styled.button`
+cursor: pointer;
   padding: 10px 32px;
   border: none;
   background: #2196f3;
@@ -76,4 +77,9 @@ export const ModalBtn = styled.button`
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: 250ms;
+  &:focus,
+  &:hover {
+    background: white;
+    color: #2196f3;
 `;

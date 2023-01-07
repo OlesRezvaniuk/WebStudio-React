@@ -1,24 +1,22 @@
-import aboutData from '../../data/about.json';
-import { ReactComponent as AntenaIcon } from '../../img/antenna 1.svg';
-import { AboutItem } from './About.styled';
+import { styles } from './About.styled';
+import { aboutData } from '../../data/AboutData';
 
 export const About = () => {
-  console.log(aboutData);
-  console.log(AntenaIcon);
-
   return (
-    <>
-      <ul>
+    <styles.AboutSection>
+      <styles.AboutList>
         {aboutData.map(item => {
           return (
-            <AboutItem key={item.id}>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </AboutItem>
+            <styles.AboutItem key={item.id}>
+              <styles.AboutText>{item.text}</styles.AboutText>
+              <styles.AboutTitle>{item.title}</styles.AboutTitle>
+              <styles.ImgBox>
+                <styles.AboutImg loading="lazy" src={item.img} alt="aboutImg" />
+              </styles.ImgBox>
+            </styles.AboutItem>
           );
         })}
-      </ul>
-      <AntenaIcon />
-    </>
+      </styles.AboutList>
+    </styles.AboutSection>
   );
 };

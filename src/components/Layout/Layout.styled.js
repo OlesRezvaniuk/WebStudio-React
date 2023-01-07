@@ -124,6 +124,7 @@ export const MenuBtn = styled.button`
 `;
 
 export const MenuBox = styled.div`
+  z-index: 10;
   position: fixed;
   left: 0;
   top: 0;
@@ -147,6 +148,9 @@ export const MenuIconOpenStyled = styled(MenuIconOpen)`
   }
 `;
 export const MenuIconCloseStyled = styled(MenuIconClose)`
+  position: fixed;
+  top: 10px;
+  right: 15px;
   cursor: pointer;
   color: black;
   transition: 250ms;

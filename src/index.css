@@ -20,4 +20,25 @@ code {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
+
+/* SocialLinksIcons actions */
+#socialLinkItem {
+  color: #afb1b8;
+  fill: #afb1b8;
+}
+#socialLinkItem:hover {
+  color: white;
+  fill: white;
+}
+#socialLinkItem:focus {
+  color: white;
+  fill: white;
+}
+#socialLinkItem > svg {
+  color: inherit;
+  fill: inherit;
+}
+/* SocialLinksIcons actions */
