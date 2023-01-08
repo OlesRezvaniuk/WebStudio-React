@@ -10,7 +10,7 @@ export const AboutUs = () => {
         {aboutUsData.map(data => {
           return (
             <styles.ListItem key={data.id}>
-              <styles.ItemImg src={data.img} alt={data.name} />
+              <styles.ItemImg src={data.img} alt={data.name} loading="lazy" />
               <styles.ItemTitle>{data.name}</styles.ItemTitle>
               <styles.ItemPosition>{data.position}</styles.ItemPosition>
               <Social />

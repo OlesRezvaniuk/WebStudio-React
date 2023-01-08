@@ -14,7 +14,12 @@ export const Social = () => {
         `;
         return (
           <styles.SocialItem key={item.id}>
-            <styles.Link id="socialLinkItem" href={item.href}>
+            <styles.Link
+              id="socialLinkItem"
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               <SocialIcon />
             </styles.Link>
           </styles.SocialItem>

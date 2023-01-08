@@ -3,6 +3,7 @@ import { About } from 'components/About/About';
 import { Works } from 'components/Works/Works';
 import { AboutUs } from 'components/AboutUs/AboutUs';
 import { Clients } from 'components/Clients/Clients';
+import { Footer } from 'components/Footer/Footer';
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
         <AboutUs />
         <Clients />
       </main>
+      <Footer />
     </>
   );
 };
