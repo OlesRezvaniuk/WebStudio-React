@@ -20,6 +20,7 @@ import {
   PhoneNumber,
   PhoneNumberIconStyled,
 } from './Layout.styled';
+import { Admin } from 'components/Admin/Admin';
 
 export const Layout = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -96,6 +97,7 @@ export const Layout = () => {
             </MenuBox>
           )}
 
+          <Admin />
           <MenuBtn onClick={handleMenuClick}>
             {!menuIsOpen ? (
               <MenuIconOpenStyled></MenuIconOpenStyled>
