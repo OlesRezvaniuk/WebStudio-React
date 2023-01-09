@@ -32,7 +32,7 @@ export const Admin = () => {
     setIsAuthOpen(false);
   };
 
-  console.log(process.env);
+  console.log(name === process.env.ADMIN_NAME);
 
   return (
     <>
