@@ -32,13 +32,13 @@ export const Admin = () => {
 
   const handleMessange = () => {
     if (name !== REACT_APP_ADMINNAME) {
-      Notify.failure('wrong name');
+      Notify.failure('wrong userName');
     }
     if (password !== REACT_APP_ADMINPASSWORD) {
-      Notify.failure('wrong password');
+      Notify.failure('wrong userPassword');
     }
     if (password === REACT_APP_ADMINPASSWORD && name === REACT_APP_ADMINNAME) {
-      Notify.success('you logged in successfully');
+      Notify.success('You logged in');
     }
   };
 
