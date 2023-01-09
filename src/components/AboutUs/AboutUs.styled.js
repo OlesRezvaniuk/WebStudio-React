@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 const AboutUsSection = styled.section`
   background-color: #f5f4fa;
   text-align: center;
+`;
+
+const AboutUsContainer = styled.div`
   padding: 60px 15px;
   margin: auto;
   @media screen and (min-width: 768px) {
@@ -106,6 +109,7 @@ const ItemPosition = styled.p`
 
 export const styles = {
   AboutUsSection,
+  AboutUsContainer,
   AboutUsTitle,
   List,
   ListItem,
