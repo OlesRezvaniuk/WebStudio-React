@@ -10,7 +10,6 @@ export const Admin = () => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [authEnter, setAuthEnter] = useState(false);
-  const [messange, setMessange] = useState('');
 
   const handleAuthOpen = () => {
     setIsAuthOpen(!isAuthOpen);
@@ -33,15 +32,12 @@ export const Admin = () => {
 
   const handleMessange = () => {
     if (name !== REACT_APP_ADMINNAME) {
-      setMessange('wrong name');
       Notify.failure('wrong name');
     }
     if (password !== REACT_APP_ADMINPASSWORD) {
-      setMessange('wrong password');
       Notify.failure('wrong password');
     }
     if (password === REACT_APP_ADMINPASSWORD && name === REACT_APP_ADMINNAME) {
-      setMessange('you logged in successfully');
       Notify.success('you logged in successfully');
     }
   };
@@ -86,7 +82,6 @@ export const Admin = () => {
             />
             <button onClick={handleMessange}>Enter</button>
           </form>
-          {messange}
         </div>
       )}
       {authEnter && <strong style={{ color: 'red' }}>Hi, Admin</strong>}
