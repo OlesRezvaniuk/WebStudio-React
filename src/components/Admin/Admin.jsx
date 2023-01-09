@@ -32,8 +32,6 @@ export const Admin = () => {
     setIsAuthOpen(false);
   };
 
-  console.log(name === process.env.ADMIN_NAME);
-
   return (
     <>
       {authEnter ? (
@@ -42,7 +40,7 @@ export const Admin = () => {
         </styles.AdminBtn>
       ) : (
         <styles.AdminBtn type="button" onClick={handleAuthOpen}>
-          login
+          login {process.env.REACT_APP_ADMINNAME}
         </styles.AdminBtn>
       )}
 
