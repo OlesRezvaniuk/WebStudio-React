@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { Footer } from 'components/Footer/Footer';
 
 import { useState } from 'react';
 import {
@@ -108,6 +109,7 @@ export const Layout = () => {
         </HeaderContainer>
       </Header>
       <Outlet />
+      <Footer />
     </>
   );
 };
