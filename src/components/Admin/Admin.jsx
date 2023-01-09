@@ -1,11 +1,16 @@
 import { styles } from './Admin.styled';
 import { useState } from 'react';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
+const { REACT_APP_ADMINNAME } = process.env;
+const { REACT_APP_ADMINPASSWORD } = process.env;
 
 export const Admin = () => {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [authEnter, setAuthEnter] = useState(false);
+  const [messange, setMessange] = useState('');
 
   const handleAuthOpen = () => {
     setIsAuthOpen(!isAuthOpen);
@@ -21,15 +26,31 @@ export const Admin = () => {
 
   const handleAuthEnter = e => {
     e.preventDefault();
-    // if (name === ADMIN_NAME && password === ADMIN_PASSWORD) {
-    //   setAuthEnter(true);
-    // }
+    if (name === REACT_APP_ADMINNAME && password === REACT_APP_ADMINPASSWORD) {
+      setAuthEnter(true);
+    }
+  };
+
+  const handleMessange = () => {
+    if (name !== REACT_APP_ADMINNAME) {
+      setMessange('wrong name');
+      Notify.failure('wrong name');
+    }
+    if (password !== REACT_APP_ADMINPASSWORD) {
+      setMessange('wrong password');
+      Notify.failure('wrong password');
+    }
+    if (password === REACT_APP_ADMINPASSWORD && name === REACT_APP_ADMINNAME) {
+      setMessange('you logged in successfully');
+      Notify.success('you logged in successfully');
+    }
   };
 
   const handleAuthLeave = e => {
     e.preventDefault();
     setAuthEnter(false);
     setIsAuthOpen(false);
+    Notify.info('you are logout');
   };
 
   return (
@@ -40,7 +61,7 @@ export const Admin = () => {
         </styles.AdminBtn>
       ) : (
         <styles.AdminBtn type="button" onClick={handleAuthOpen}>
-          login {process.env.REACT_APP_ADMINNAME}
+          login
         </styles.AdminBtn>
       )}
 
@@ -63,8 +84,9 @@ export const Admin = () => {
               onChange={handlePasswordChange}
               value={password}
             />
-            <button>Enter</button>
+            <button onClick={handleMessange}>Enter</button>
           </form>
+          {messange}
         </div>
       )}
       {authEnter && <strong style={{ color: 'red' }}>Hi, Admin</strong>}
