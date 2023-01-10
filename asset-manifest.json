@@ -1,10 +1,19 @@
 {
   "files": {
     "main.css": "/WebStudio-React/static/css/main.a43bf354.css",
-    "main.js": "/WebStudio-React/static/js/main.ab86b635.js",
+    "main.js": "/WebStudio-React/static/js/main.89be6e72.js",
+    "static/media/img (1).jpg": "/WebStudio-React/static/media/img (1).c466b55f90bc7f666d5e.jpg",
+    "static/media/img (8).jpg": "/WebStudio-React/static/media/img (8).9668839723c5196d8901.jpg",
     "static/media/heroD.jpg": "/WebStudio-React/static/media/heroD.1845d10988e6759310fc.jpg",
+    "static/media/img (6).jpg": "/WebStudio-React/static/media/img (6).0f724274759534fc1f26.jpg",
     "static/media/heroT.jpg": "/WebStudio-React/static/media/heroT.d4482bcebd99362bf92d.jpg",
+    "static/media/img (2).jpg": "/WebStudio-React/static/media/img (2).5d98d1a9ded8bf4fcea9.jpg",
+    "static/media/img (5).jpg": "/WebStudio-React/static/media/img (5).e752d116bddd86c9c1aa.jpg",
     "static/media/heroM.jpg": "/WebStudio-React/static/media/heroM.54e7955a75e0f3e53100.jpg",
+    "static/media/img.jpg": "/WebStudio-React/static/media/img.9299287c9d25f04adc4a.jpg",
+    "static/media/img (4).jpg": "/WebStudio-React/static/media/img (4).9383801495c46a1f13c0.jpg",
+    "static/media/img (7).jpg": "/WebStudio-React/static/media/img (7).08381156bc559dfb6d54.jpg",
+    "static/media/img (3).jpg": "/WebStudio-React/static/media/img (3).2827394da9608b04586a.jpg",
     "static/media/work1.jpg": "/WebStudio-React/static/media/work1.b1545ca6866a29803be7.jpg",
     "static/media/work2.jpg": "/WebStudio-React/static/media/work2.c976697651f191f99174.jpg",
     "static/media/AboutUs2.jpg": "/WebStudio-React/static/media/AboutUs2.e9c51066bc2fa9a7c7a3.jpg",
@@ -33,10 +42,10 @@
     "static/media/close-black.svg": "/WebStudio-React/static/media/close-black.25f5bd0cdfd4b0e1b70f1b27f997afda.svg",
     "static/media/menu_40px.svg": "/WebStudio-React/static/media/menu_40px.b89a632bd03690e02e40a22fe71cd61e.svg",
     "main.a43bf354.css.map": "/WebStudio-React/static/css/main.a43bf354.css.map",
-    "main.ab86b635.js.map": "/WebStudio-React/static/js/main.ab86b635.js.map"
+    "main.89be6e72.js.map": "/WebStudio-React/static/js/main.89be6e72.js.map"
   },
   "entrypoints": [
     "static/css/main.a43bf354.css",
-    "static/js/main.ab86b635.js"
+    "static/js/main.89be6e72.js"
   ]
 }
