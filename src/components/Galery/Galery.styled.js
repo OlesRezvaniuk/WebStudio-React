@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 const GaleryList = styled.ul`
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(1, 4fr);
   @media screen and (min-width: 768px) {
@@ -10,6 +11,10 @@ const GaleryList = styled.ul`
     grid-template-columns: repeat(3, 4fr);
   }
   gap: 30px;
+`;
+
+const GaleryItem = styled.li`
+  text-align: center;
 `;
 
 const GaleryImg = styled.img`
@@ -22,4 +27,4 @@ const GaleryImg = styled.img`
   }
 `;
 
-export const styles = { GaleryList, GaleryImg };
+export const styles = { GaleryList, GaleryItem, GaleryImg };

@@ -5,7 +5,7 @@ import { SocialFooter } from 'components/SocialFooter/SocialFooter';
 import { useState } from 'react';
 import { styles } from './Footer.styled';
 
-export const Footer = () => {
+export const Footer = ({ blockMapOpen, setBlockMapOpen }) => {
   const [value, setValue] = useState('');
   const [isMapOpen, setIsMapOpen] = useState(false);
 
@@ -19,6 +19,8 @@ export const Footer = () => {
       window.removeEventListener('keydown', handleKeyDown);
     }
   };
+
+  console.log(blockMapOpen);
 
   const handleMapAction = e => {
     if (e.target.text === 'Kyiv, Lesia Ukrainka Ave, 26') {

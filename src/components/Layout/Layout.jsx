@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { NavLink, Outlet } from 'react-router-dom';
 import { Footer } from 'components/Footer/Footer';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   NavList,
   Header,
@@ -25,9 +26,14 @@ import { Admin } from 'components/Admin/Admin';
 
 export const Layout = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [blockMapOpen, setBlockMapOpen] = useState(false);
 
   const handleMenuClick = () => {
     setMenuIsOpen(!menuIsOpen);
+  };
+
+  const handleMapOpenBlock = () => {
+    setBlockMapOpen(true);
   };
 
   return (
@@ -44,10 +50,12 @@ export const Layout = () => {
                 <NavLinkStyled to="/">Studio</NavLinkStyled>
               </li>
               <li>
-                <NavLinkStyled to="/portfolio/All">Portfolio</NavLinkStyled>
+                <NavLinkStyled to="/portfolio">Portfolio</NavLinkStyled>
               </li>
               <li>
-                <NavLinkStyled to="/contacts">Contacts</NavLinkStyled>
+                <NavLinkStyled onClick={() => {}}  to="/contacts">
+                  Contacts
+                </NavLinkStyled>
               </li>
             </NavList>
           </nav>
@@ -77,7 +85,9 @@ export const Layout = () => {
                     <NavLink to="/portfolio">Portfolio</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contacts">Contacts</NavLink>
+                    <NavLink onClick={handleMapOpenBlock} to="/contacts">
+                      Contacts
+                    </NavLink>
                   </li>
                 </NavListMenu>
               </nav>
@@ -109,7 +119,7 @@ export const Layout = () => {
         </HeaderContainer>
       </Header>
       <Outlet />
-      <Footer />
+      <Footer blockMapOpen={blockMapOpen} setBlockMapOpen={setBlockMapOpen} />
     </>
   );
 };

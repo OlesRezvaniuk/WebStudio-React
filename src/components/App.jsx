@@ -14,7 +14,7 @@ export const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />}>
-          <Route index path="All" element={<GaleryAll />} />
+          <Route index element={<GaleryAll />} />
           <Route path="Web-sites" element={<GaleryWebSites />} />
           <Route path="Applications" element={<GaleryApplication />} />
           <Route path="Design" element={<GaleryDesign />} />

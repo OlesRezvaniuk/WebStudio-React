@@ -7,11 +7,11 @@ export const GaleryWebSites = () => {
     <styles.GaleryList>
       {WebSiteProjects.map(item => {
         return (
-          <li key={item.id}>
+          <styles.GaleryItem key={item.id}>
             <styles.GaleryImg src={item.src} alt={item.title} loading="lazy" />
             <h3>{item.title}</h3>
             <p>{item.ganre}</p>
-          </li>
+          </styles.GaleryItem>
         );
       })}
     </styles.GaleryList>
