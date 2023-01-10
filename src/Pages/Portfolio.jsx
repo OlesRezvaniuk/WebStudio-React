@@ -1,19 +1,19 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import { PortfolioLinksData } from 'data/PortfolioLinksData';
+import { Outlet } from 'react-router-dom';
+import { PortfolioBtn } from 'components/PortfolioBtn/PortfolioBtn';
+import styled from '@emotion/styled';
+
+const Section = styled.section`
+  padding: 0px 15px;
+  width: 768px;
+`;
 
 export const Portfolio = () => {
   return (
-    <section>
-      <ul>
-        {PortfolioLinksData.map(item => {
-          return (
-            <NavLink key={item.id} to={item.to}>
-              {item.name}
-            </NavLink>
-          );
-        })}
-      </ul>
-      <Outlet />
-    </section>
+    <main>
+      <Section>
+        <PortfolioBtn />
+        <Outlet />
+      </Section>
+    </main>
   );
 };
