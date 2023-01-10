@@ -44,7 +44,7 @@ export const Layout = () => {
                 <NavLinkStyled to="/">Studio</NavLinkStyled>
               </li>
               <li>
-                <NavLinkStyled to="/portfolio">Portfolio</NavLinkStyled>
+                <NavLinkStyled to="/portfolio/All">Portfolio</NavLinkStyled>
               </li>
               <li>
                 <NavLinkStyled to="/contacts">Contacts</NavLinkStyled>
