@@ -2,7 +2,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { Footer } from 'components/Footer/Footer';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   NavList,
   Header,
@@ -32,8 +32,14 @@ export const Layout = () => {
     setMenuIsOpen(!menuIsOpen);
   };
 
-  const handleMapOpenBlock = () => {
-    setBlockMapOpen(true);
+  const scroll = e => {
+    e.preventDefault();
+    setTimeout(() => {
+      window.scrollBy({
+        top: (0, 6000),
+        behavior: 'smooth',
+      });
+    }, 250);
   };
 
   return (
@@ -53,9 +59,9 @@ export const Layout = () => {
                 <NavLinkStyled to="/portfolio">Portfolio</NavLinkStyled>
               </li>
               <li>
-                <NavLinkStyled onClick={() => {}}  to="/contacts">
+                <a onClick={scroll} href=" ">
                   Contacts
-                </NavLinkStyled>
+                </a>
               </li>
             </NavList>
           </nav>
@@ -85,9 +91,9 @@ export const Layout = () => {
                     <NavLink to="/portfolio">Portfolio</NavLink>
                   </li>
                   <li>
-                    <NavLink onClick={handleMapOpenBlock} to="/contacts">
+                    <a onClick={scroll} href=" ">
                       Contacts
-                    </NavLink>
+                    </a>
                   </li>
                 </NavListMenu>
               </nav>
