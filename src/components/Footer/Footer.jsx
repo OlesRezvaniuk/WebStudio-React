@@ -47,7 +47,8 @@ export const Footer = () => {
             <styles.LogoLink>
               <styles.LogoLinkBlack>Web</styles.LogoLinkBlack>Studio
             </styles.LogoLink>
-            <address>
+            <styles.FooterAddresses>
+              <styles.GoogleMapIcon />
               <styles.AddressList>
                 {AddressData.map(({ id, name, href }) => {
                   return (
@@ -61,17 +62,23 @@ export const Footer = () => {
                   );
                 })}
               </styles.AddressList>
-            </address>
+            </styles.FooterAddresses>
           </styles.AddressBox>
-          <styles.SocialTitle>join us</styles.SocialTitle>
-          <SocialFooter />
+          <styles.SocialBox>
+            <styles.SocialTitle>join us</styles.SocialTitle>
+            <SocialFooter />
+          </styles.SocialBox>
         </div>
         <div>
-          <h3>Subscribe to newsletter</h3>
-          <form onSubmit={handleSubmit}>
-            <input value={value} onChange={handleSubscribe} type="text" />
+          <styles.SubscribeTitle>Subscribe to newsletter</styles.SubscribeTitle>
+          <styles.SubscribeForm onSubmit={handleSubmit}>
+            <styles.SubscribeInput
+              value={value}
+              onChange={handleSubscribe}
+              type="text"
+            />
             <button>Subscribe</button>
-          </form>
+          </styles.SubscribeForm>
         </div>
         {isMapOpen && (
           <styles.MapBackdrop onClick={handleMapAction}>

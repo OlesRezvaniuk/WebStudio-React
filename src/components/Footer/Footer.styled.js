@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import Iframe from 'react-iframe';
+import { ReactComponent as MapIcon } from '../../img/google-map-icon.svg';
 
 const Map = styled(Iframe)`
   width: 75%;
@@ -28,12 +29,22 @@ const AddressBox = styled.div`
   margin-bottom: 60px;
 `;
 
+const FooterAddresses = styled.address`
+  display: flex;
+  justify-content: center;
+`;
+
+const SocialBox = styled.div`
+  margin-bottom: 60px;
+`;
+
 const FooterContainer = styled.div`
   max-width: 1200px;
   margin: auto;
 `;
 
 const LogoLink = styled(Link)`
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-style: normal;
   text-decoration: none;
@@ -42,6 +53,8 @@ const LogoLink = styled(Link)`
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  display: inline-flex;
+  justify-content: center;
 `;
 
 const LogoLinkBlack = styled.span`
@@ -52,9 +65,12 @@ const AddressList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 8px;
 `;
 
 const AddressItem = styled.a`
+  text-decoration: none;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -69,8 +85,11 @@ const AddressItem = styled.a`
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-  &:nth-of-type(2) {
-    pointer-events: none;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 `;
 
 const MapBackdrop = styled.div`
@@ -94,9 +113,40 @@ const SocialTitle = styled.h3`
   margin-bottom: 20px;
 `;
 
+const GoogleMapIcon = styled(MapIcon)`
+  height: 20px;
+  margin-right: 10px;
+`;
+
+const SubscribeForm = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+const SubscribeTitle = styled.h3`
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+`;
+
+const SubscribeInput = styled.input`
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+`;
+
 export const styles = {
+  SubscribeTitle,
   FooterSection,
   FooterContainer,
+  FooterAddresses,
   AddressBox,
   LogoLink,
   LogoLinkBlack,
@@ -105,4 +155,8 @@ export const styles = {
   MapBackdrop,
   SocialTitle,
   Map,
+  GoogleMapIcon,
+  SocialBox,
+  SubscribeInput,
+  SubscribeForm,
 };
