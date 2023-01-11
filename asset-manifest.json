@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WebStudio-React/static/css/main.a43bf354.css",
-    "main.js": "/WebStudio-React/static/js/main.3c5635d4.js",
+    "main.js": "/WebStudio-React/static/js/main.bc95f7b0.js",
     "static/media/img (1).jpg": "/WebStudio-React/static/media/img (1).c466b55f90bc7f666d5e.jpg",
     "static/media/img (8).jpg": "/WebStudio-React/static/media/img (8).9668839723c5196d8901.jpg",
     "static/media/heroD.jpg": "/WebStudio-React/static/media/heroD.1845d10988e6759310fc.jpg",
@@ -43,10 +43,10 @@
     "static/media/close-black.svg": "/WebStudio-React/static/media/close-black.25f5bd0cdfd4b0e1b70f1b27f997afda.svg",
     "static/media/menu_40px.svg": "/WebStudio-React/static/media/menu_40px.b89a632bd03690e02e40a22fe71cd61e.svg",
     "main.a43bf354.css.map": "/WebStudio-React/static/css/main.a43bf354.css.map",
-    "main.3c5635d4.js.map": "/WebStudio-React/static/js/main.3c5635d4.js.map"
+    "main.bc95f7b0.js.map": "/WebStudio-React/static/js/main.bc95f7b0.js.map"
   },
   "entrypoints": [
     "static/css/main.a43bf354.css",
-    "static/js/main.3c5635d4.js"
+    "static/js/main.bc95f7b0.js"
   ]
 }
